@@ -1,0 +1,105 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main{
+  background: url(/CSS/img/covid19.jpg) no-repeat center/cover;
+  height: 99vh;
+  opacity: .9;
+  font-family: 'Akaya Telivigala', cursive;
+  color: #fff;
+  font-size:x-large;
+}
+
+button{
+  font-family: 'Akaya Telivigala', cursive;
+  border:  solid #2099BA; 
+  border-radius: 15%;
+  width: 5vw;
+  height: 5vh;
+  cursor:pointer;
+  opacity: .8;
+}
+
+.dropDown{
+  font-family: 'Akaya Telivigala', cursive;
+}
+
+#myChart{
+  margin: auto;
+  height: 45vh;
+  max-width: 90vw;
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 2vh 1vw;
+}
+
+
+.choose-type{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 25vh;
+}
+
+.header{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2vh;
+  margin-top: 1vh;
+}
+
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+/* The actual popup*/
+.popup .popuptext {
+  visibility: hidden;
+  width: 300px;
+  background-color: #E0EAEC;
+  color: black;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 135px;
+  left: 40vw;
+}
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+
+@media only screen and (max-width: 600px) {
+  button{
+    font-family: 'Akaya Telivigala', cursive;
+    border:  solid #2099BA; 
+    border-radius: 15%;
+    width: 11vw;
+    height: 5vh;
+    cursor:pointer;
+    opacity: .8;
+  }
+}

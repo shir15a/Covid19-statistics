@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Covid-19-statistics </title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/CSS/style.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
+
+</head>
+<body>
+  <div class="main">
+    <div class="header">
+        <h1>Covid 19</h1>
+    </div>
+    <div class="chart">
+      <canvas id="myChart"></canvas>
+    </div>
+    <div class="choose-type">
+      <section class="data-type-buttons">
+        <div class="header">Choose data type</div>
+        <button class="btn-data-type confirmed" name="confirmed">Confirmed</button>
+        <button class="btn-data-type deaths" name="deaths">Deaths</button>
+        <button class="btn-data-type recovered" name="recovered">Recovered</button>
+        <button class="btn-data-type critical" name="critical">Critical</button>
+      </section>
+
+      <section class="region-buttons">
+        <div class="header">Choose region</div>
+        <button class="btn-region africa" name="Africa">Africa</button>
+        <button class="btn-region americas" name="Americas">Americas </button>
+        <button class="btn-region asia" name="Asia">Asia</button>
+        <button class="btn-region europe" name="Europe">Europe</button>
+        <button class="btn-region oceania" name="Oceania">Oceania</button>
+        <button class="world" name="world">World</button>
+      </section>
+      <section class="header">Choose a Country</section>
+    </div>
+    <div class="popup">
+      <span class="popuptext" id="myPopup"></span>
+    </div>
+
+  </div>
+  <script src="/JS/covid.js"></script>
+</body>
+
+</html>
+
+
+
